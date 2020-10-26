@@ -31,5 +31,25 @@ class TemperatureTest < Minitest::Test
     assert_equal 32, @temp_converter.to_fahrenheit(0)
   end
 
+  def test_to_fahrenheit_5
+    assert_equal 41, @temp_converter.to_fahrenheit(5)
+  end
+
+  def test_to_fahrenheit_10
+    assert_equal 50, @temp_converter.to_fahrenheit(10)
+  end
+
+  def test_to_fahrenheit_35
+    assert_equal 95, @temp_converter.to_fahrenheit(35)
+  end
+
+  def test_to_fahrenheit_100
+    assert_equal 212, @temp_converter.to_fahrenheit(100)
+  end
+
+  def test_to_fahrenheit_200
+    assert_equal 392, @temp_converter.to_fahrenheit(200)
+  end
+
 
 end
