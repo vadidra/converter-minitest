@@ -48,7 +48,8 @@ class TemperatureTest < Minitest::Test
   end
 
   def test_to_fahrenheit_200
-    assert_equal 392, @temp_converter.to_fahrenheit(200)
+    assert_equal 3
+    @temp_converter.to_fahrenheit(200)
   end
 
 
